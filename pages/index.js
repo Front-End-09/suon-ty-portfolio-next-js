@@ -7,15 +7,17 @@ import { motion } from 'framer-motion';
 import CanvasAnimation from '../components/CanvasAnimation';
 // Framer motion
 import { fadeIn } from '../variants';
+//Counter
+
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen relative overflow-hidden">
+    <div className="bg-primary/60 relative h-fit">
       {/* Canvas Animation */}
       <CanvasAnimation />
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center py-10 xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center py-10 lg:pt-40 lg:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
@@ -24,8 +26,8 @@ const Home = () => {
             exit='hidden'
             className="h1"
           >
-            Transforming Ideas<br />Into{' '}
-            <span className="text-accent">Digital Reality</span>
+            FRONT END<br />{' '}
+            <span className="text-accent">DEVELOPER</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -36,7 +38,7 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of
             type and scrambled it to make a type specimen book.
           </motion.p>
           {/* Btn */}

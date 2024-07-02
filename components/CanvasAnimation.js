@@ -45,7 +45,7 @@ const CanvasAnimation = () => {
         this.size = Math.random() * 2 + 0.3;
         this.speedX = Math.random() * 2 - 1;
         this.speedY = Math.random() * 2 - 1;
-        this.color = '#F13024';
+        this.color = '#12f7ff';
       }
       update() {
         this.x += this.speedX;
