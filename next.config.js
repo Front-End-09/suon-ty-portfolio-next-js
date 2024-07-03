@@ -4,9 +4,6 @@ const nextConfig = {
   // swcMinify: true,
   devIndicators: 'dist',
   output: "export",  // <=== enables static exports
-  images: {
-    unoptimized: true,
-  }
 }
 
 module.exports = nextConfig
