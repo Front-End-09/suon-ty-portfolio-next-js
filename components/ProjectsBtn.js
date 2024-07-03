@@ -1,5 +1,6 @@
 // Next image
 import Image from "next/image";
+import profilePic from '../public/rounded-text.png';
 // Next link
 import Link from 'next/link';
 // Icons
@@ -10,7 +11,7 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link href='/work' className="relative w-[185px] flex justify-center items-center bg-cover bg-no-repeat group">
           <Image
-            src='/rounded-text.png'
+            src={profilePic}
             width={141}
             height={148}
             alt=""

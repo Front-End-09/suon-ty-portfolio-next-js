@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 // next.config.js
+// next.config.js
 module.exports = {
-  distDir: 'out',
-  basePath: 'suon-ty-portfolio-next-js',
+  basePath: '/suon-ty-portfolio-next-js',
   assetPrefix: '/suon-ty-portfolio-next-js/',
   images: {
     unoptimized: true,
   },
+  distDir: 'out',
 };
+
 
