@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV = 'production';
-const nextConfig = {
-  basePath: isProd ? 'nextjs-blog-deployment' : '',
-  devIndicators: 'dist',
-  output: "export",  // <=== enables static exports
-}
+// next.config.js
+module.exports = {
+  distDir: 'out',
+  basePath: 'suon-ty-portfolio-next-js',
+  assetPrefix: '/suon-ty-portfolio-next-js/',
+  images: {
+    unoptimized: true,
+  },
+};
 
-module.exports = nextConfig
