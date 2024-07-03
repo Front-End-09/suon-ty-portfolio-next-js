@@ -16,7 +16,7 @@ const Home = () => {
       {/* Canvas Animation */}
       <CanvasAnimation />
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center py-10 lg:pt-40 lg:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1

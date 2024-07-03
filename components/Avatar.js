@@ -1,9 +1,9 @@
 import Image from 'next/image';
-// import profilePic from '../public/avatar.png'
+import profilePic from '../public/avatar.png'
 const Avatar = () => {
   return (
     <div className="hidden xl:flex xl:max-w-none">
-         <Image src='/avatar.png'
+         <Image src={profilePic}
            width={737}
            height={678}
            alt="avatar"

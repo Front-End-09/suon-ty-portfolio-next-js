@@ -67,7 +67,7 @@ const About = () => {
     ];
 
     return (
-        <div className='h-full bg-primary/30 py-32 text-center lg:text-left'>
+        <div className='h-screen bg-primary/30 py-32 text-center lg:text-left'>
             <CanvasAnimation />
             {/* Particle */}
                 <ParticlesContainer />
@@ -77,7 +77,7 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='hidden lg:flex absolute bottom-0 -left-[370px]'>
+                className='hidden lg:flex absolute bottom-0 -left-[240px]'>
                 <Circles />
                 <Avatar />
             </motion.div>
