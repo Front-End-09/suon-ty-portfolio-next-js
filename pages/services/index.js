@@ -1,9 +1,7 @@
 // Components
 import ParticlesContainer from '../../components/ParticlesContainer';
 import CanvasAnimation from '../../components/CanvasAnimation';
-import serviceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
-import Circle from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import Circles from '../../components/Circles';
@@ -37,7 +35,7 @@ const Services = () => {
                          </div>
                         {/* Slider */}
                         <motion.div
-                            variants={fadeIn('up', 0.6)}
+                            variants={fadeIn('down', 0.6)}
                             initial='hidden'
                             animate='show'
                             exit='show'
