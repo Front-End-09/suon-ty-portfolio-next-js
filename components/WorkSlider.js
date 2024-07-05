@@ -12,19 +12,19 @@ const workSlideData = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "../public/thumb1.jpg",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "../public/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "../public/thumb3.jpg",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "../public/thumb4.jpg",
         },
       ],
     },
@@ -32,19 +32,19 @@ const workSlideData = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "../public/thumb4.jpg",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "../public/thumb1.jpg",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "../public/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "../public/thumb3.jpg",
         },
       ],
     },
