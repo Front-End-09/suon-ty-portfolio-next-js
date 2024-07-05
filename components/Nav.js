@@ -9,7 +9,7 @@ import {
   HiEnvelope,
 } from 'react-icons/hi2';
 
-// nav data
+//Navigaiton data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
@@ -29,7 +29,6 @@ export const navData = [
 
 const Nav = () => {
   const { pathname } = useRouter();
-
   return (
     <nav className='flex flex-col items-center xl:justify-center rounded-full p-20 gap-y-4 fixed z-50 h-max mt-auto bottom-0 xl:right-[2%] top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
       {/* inner */}
