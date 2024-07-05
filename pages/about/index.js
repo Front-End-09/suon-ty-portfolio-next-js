@@ -67,7 +67,7 @@ const About = () => {
     ];
 
     return (
-        <div className='h-screen bg-primary/30 py-32 text-center lg:text-left'>
+        <div className='h-full w-full py-32 text-center lg:text-left'>
             <CanvasAnimation />
             {/* Particle */}
                 <ParticlesContainer />
@@ -77,34 +77,81 @@ const About = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                className='hidden lg:flex absolute bottom-0 -left-[240px]'>
-                <Circles />
+                className='hidden lg:flex absolute bottom-0 z-40 -left-[240px]'>
                 <Avatar />
             </motion.div>
-            <div className='flex justify-center items-center w-full h-full'>
+               <Circles />
+            <div className='flex justify-center items-center w-full h-screen'>
                 <div className='container mx-auto h-full flex flex-col items-center lg:flex-row'>
                     {/* text */}
                     <div className='flex-1 flex flex-col justify-center'>
-                        <h2 className='h2'>FRONT END <span className='text-accent'>DEVELOPER</span></h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book.
-                        </p>
+                        <motion.h2
+                            variants={fadeIn('right', 0.2)}
+                            initial='hidden'
+                            animate='show'
+                            exit='hidden'
+                            className='h2'>FRONT END <span className='text-accent'>DEVELOPER</span></motion.h2>
+                        <motion.p
+                            variants={fadeIn('right', 0.2)}
+                            initial='hidden'
+                            animate='show'
+                            exit='hidden'
+                            >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry standard dummy text ever since the 1500s.
+                        </motion.p>
                           {/* Counter */}
-                        <div>
-                            <div>
+                        <motion.div
+                            variants={fadeIn('right', 0.6)}
+                            initial='hidden'
+                            animate='show'
+                            exit='hidden'
+                            className='hidden md:flex md:max-w-xl lg:max-w-none mx-auto xl:mx-0 mb-0'>
+                            <div className='flex  flex-1 lg:gap-x-6 w-full mt-4'>
                                 {/* Experience */}
                                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                                   <div className='text-2xl lg:text-4xl font-semibold text-accent mb-2'>
-                                       <CountUp start={0} end={10} duration={10} /> +
+                                   <div className='text-2xl lg:text-3xl font-semibold text-accent mb-2'>
+                                       <CountUp start={0} end={10} duration={5} /> +
                                    </div>
                                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
                                 </div>
+                                {/* Client */}
+                                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                   <div className='text-2xl lg:text-3xl font-semibold text-accent mb-2'>
+                                       <CountUp start={0} end={250} duration={5} /> +
+                                   </div>
+                                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Client</div>
+                                </div>
+                                {/* Saatifies Client */}
+                                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                   <div className='text-2xl lg:text-3xl font-semibold text-accent mb-2'>
+                                       <CountUp start={0} end={10} duration={5} /> +
+                                   </div>
+                                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satifies Client</div>
+                                </div>
+                                {/* Finished Project */}
+                                <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                   <div className='text-2xl lg:text-3xl font-semibold text-accent mb-2'>
+                                       <CountUp start={0} end={650} duration={5} /> +
+                                   </div>
+                                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished Project</div>
+                                </div>
+                                {/* Winning Award */}
+                                <div className='relative flex-1'>
+                                   <div className='text-2xl lg:text-3xl font-semibold text-accent mb-2'>
+                                       <CountUp start={0} end={8} duration={5} /> +
+                                   </div>
+                                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning Award</div>
+                                </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     {/* info */}
-                    <div className='flex flex-col w-full lg:max-w-[48%] h-[400px]'>
+                    <motion.div
+                        variants={fadeIn('right', 0.4)}
+                        initial='hidden'
+                        animate='show'
+                        exit='hidden'
+                        className='flex flex-col w-full lg:max-w-[48%] h-[400px]'>
                         <div className='flex gap-x-4 z-40 relative lg:gap-x-8 mx-auto lg:mx-0 mb-4'>
                             {aboutData.map((item, itemIndex) => (
                                 <div
@@ -132,7 +179,7 @@ const About = () => {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
