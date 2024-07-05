@@ -11,11 +11,11 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 relative h-full w-full">
+    <div className="bg-primary/60 relative h-screen w-full">
       {/* Canvas Animation */}
       <CanvasAnimation />
       {/* text */}
-      <div className="w-full h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center py-10 lg:pt-40 lg:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1

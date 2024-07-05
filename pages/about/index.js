@@ -67,7 +67,7 @@ const About = () => {
     ];
 
     return (
-        <div className='h-full w-full py-32 text-center lg:text-left'>
+        <div className='h-screen w-full py-32 text-center lg:text-left'>
             <CanvasAnimation />
             {/* Particle */}
                 <ParticlesContainer />
@@ -81,7 +81,7 @@ const About = () => {
                 <Avatar />
             </motion.div>
                <Circles />
-            <div className='flex justify-center items-center w-full h-screen'>
+            <div className='flex justify-center items-center w-full h-full'>
                 <div className='container mx-auto h-full flex flex-col items-center lg:flex-row'>
                     {/* text */}
                     <div className='flex-1 flex flex-col justify-center'>
