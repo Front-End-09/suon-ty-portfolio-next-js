@@ -9,18 +9,18 @@ import ServiceSlider from '../../components/ServiceSlider';
 const Services = () => {
   return (
      <div className='w-full h-screen'>
-          <div className='h-full bg-primary/30 py-36 flex items-center'>
+          <div className='h-full justify-start bg-primary/30 py-36 flex items-center'>
                <Circles/>
                <div className='container m-auto'>
                    <div className='flex flex-col lg:flex-row gap-x-8'>
                         {/* text */}
-                         <div className='text-center flex lg:w-[30vw] flex-col lg:text-left mb-4 lg:mb-0'>
+                         <div className='text-center flex l:w-[30vw] flex-col lg:text-left mb-4 lg:mb-0'>
                             <motion.h2
                               variants={fadeIn('up', 0.2)}
                               initial='hidden'
                               animate='show'
                               exit='show'
-                              className='h2 lg:mt-8'>
+                              className='h2 lg:mt-8 text-nowrap'>
                                 My Services <span className='text-accent'>.</span>
                              </motion.h2>
                              <motion.p

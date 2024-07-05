@@ -20,7 +20,7 @@ const Work = () => {
                               initial='hidden'
                               animate='show'
                               exit='show'
-                              className='h2 lg:mt-8'>
+                              className='h2 lg:mt-8 text-nowrap'>
                                 My Work <span className='text-accent'>.</span>
                              </motion.h2>
                              <motion.p
@@ -39,7 +39,7 @@ const Work = () => {
                             initial='hidden'
                             animate='show'
                             exit='show'
-                            className="w-full cursor-pointer relative z-30 h-fit lg:max-w-[65%%]">
+                            className="w-full cursor-pointer relative z-30 h-full lg:max-w-[65%%]">
                            <WorkSlider/>
                         </motion.div>
                    </div>
