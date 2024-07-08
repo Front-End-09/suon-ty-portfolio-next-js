@@ -21,7 +21,7 @@ const Contact = () => {
                         animate="show"
                         exit="hidden"
                         className='h2 text-center mb-12'>
-                        Let is <span className='text-accent'>Connect</span>
+                        Let <span className='text-accent'>Connect</span>
                     </motion.h2>
                     {/* Form */}
                     <motion.form
