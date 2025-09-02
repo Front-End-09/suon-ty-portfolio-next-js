@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaHtml5,FaGraduationCap , FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from "react-icons/fa";
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
-import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import CanvasAnimation from '../../components/CanvasAnimation';
 import ParticlesContainer from '../../components/ParticlesContainer';
@@ -78,7 +77,7 @@ const About = () => {
                 animate='show'
                 exit='hidden'
                 className='hidden lg:flex absolute bottom-0 z-40 -left-[240px]'>
-                <Avatar />
+                {/* <Avatar /> */}
             </motion.div>
                <Circles />
             <div className='flex justify-center items-center w-full h-full'>

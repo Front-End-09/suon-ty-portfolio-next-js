@@ -2,28 +2,36 @@ import Image from "next/image";
 // Components
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
-import Avatar from '../components/Avatar';
+// import Avatar from '../components/Avatar';
 import { motion } from 'framer-motion';
 import CanvasAnimation from '../components/CanvasAnimation';
+import About from "./about";
 // Framer motion
 import { fadeIn } from '../variants';
 //Counter
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 relative h-screen w-full">
+    <div className="bg-primary/60 relative h-full w-full">
       {/* Canvas Animation */}
       <CanvasAnimation />
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center py-10 lg:pt-40 lg:text-left h-full container mx-auto">
-          {/* title */}
-          <motion.h1
-            variants={fadeIn('down', 0.2)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className="h1"
+         {/* <Avatar/> */}
+        <div style={{
+            backgroundImage: "url('/avatar-02.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+            }}
+            className="text-center px-5 flex flex-col justify-center py-10 lg:pt-40 lg:text-left w-full h-full">
+            {/* title */}
+            <motion.h1
+              variants={fadeIn('down', 0.2)}
+              initial='hidden'
+              animate='show'
+              exit='hidden'
+              className="h1"
           >
             FRONT END<br />{' '}
             <span className="text-accent">DEVELOPER</span>
@@ -54,11 +62,11 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
         </div>
-      </div>
+       </div>
       {/* Image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-full h-full absolute right-0 bottom-0">
           {/* bg image */}
-         <div className="bg-none xl:bg-explosion z-10 xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+         <div className="bg-none z-10 xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
          {/* Particle */}
            <ParticlesContainer/>
          {/* avatar img */}
@@ -69,9 +77,9 @@ const Home = () => {
             exit='hidden'
             transition={{duration:1, ease: 'easeInOut'}}
             className="w-full h-full max-w-[737px] max-h-[678px] absolute z-10 -bottom-32 lg:bottom-0 lg:right-[8%]">
-            <Avatar/>
          </motion.div>
       </div>
+      <About/>
     </div>
   );
 }
